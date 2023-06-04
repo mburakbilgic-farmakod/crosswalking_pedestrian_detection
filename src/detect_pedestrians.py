@@ -7,6 +7,12 @@ import math
 
 class PedestrianDetector:
     def __init__(self, video_path, crosswalk_coordinates, output_path=None):
+        """
+        :param video_path: Path to the video file
+        :param crosswalk_coordinates: Coordinates of the crosswalk
+        :param output_path: Path to the output video file
+        Here we are using the YOLOv5 model to detect pedestrians in the crosswalk region and draw an arrow indicating the direction of the pedestrian.
+       """
         self.cap = cv2.VideoCapture(video_path)
         self.model = models.get("yolo_nas_s", pretrained_weights="coco")
         self.class_names = [
@@ -32,6 +38,10 @@ class PedestrianDetector:
             self.video_writer = cv2.VideoWriter(output_path, fourcc, self.fps, (self.frame_width, self.frame_height))
 
     def detect_pedestrian(self):
+        """
+        Detect pedestrians in the crosswalk region and draw an arrow indicating the direction of the pedestrian.
+        :return: None
+        """
         count = 0
         while True:
             ret, frame = self.cap.read()

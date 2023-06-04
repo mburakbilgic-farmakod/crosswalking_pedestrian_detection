@@ -1,6 +1,11 @@
 import cv2
 
 def detect_crosswalk(video_path):
+    """
+    Detect the crosswalk region in the video.
+    :param video_path: Path to the video file.
+    :return: List of coordinates of the crosswalk region.
+    """
     # Open the video file
     video = cv2.VideoCapture(video_path)
 
