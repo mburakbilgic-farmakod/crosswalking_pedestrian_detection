@@ -18,7 +18,7 @@ The Pedestrian Detector is a Python-based application that utilizes the YOLO NAS
 2. Install the required dependencies:
    ```bash
    pip install -r requirements.txt
-```
+
 
 ## Usage
 
