@@ -6,7 +6,7 @@ from src.detect_pedestrians import PedestrianDetector
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--video", type=str, default="dummy_video_1.mp4", help="Path to the video file if you want to use  webcam use 0")
-parser.add_argument("--output", type=str, default ='aoutput.mp4',  help="path to extracted video")
+parser.add_argument("--output", type=str, default ='output.mp4',  help="path to extracted video")
 args = parser.parse_args()
 
 out_path = args.output
