@@ -34,7 +34,7 @@ class PedestrianDetector:
         self.fps = int(self.cap.get(cv2.CAP_PROP_FPS))
         self.video_writer = None
         if self.output_path:
-            fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+            fourcc = cv2.VideoWriter_fourcc(*'mp4')
             self.video_writer = cv2.VideoWriter(output_path, fourcc, self.fps, (self.frame_width, self.frame_height))
 
     def detect_pedestrian(self):
