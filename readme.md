@@ -25,13 +25,13 @@ The Pedestrian Detector is a Python-based application that utilizes the YOLO NAS
 
 1. Run the application using the `main.py` script:
 ```bash
-python main.py --video path/to/video_file.mp4 --crosswalk path/to/output_file.mp4
+python main.py --video path/to/video_file.mp4 --output path/to/output_file.mp4
 ```
 
 | Argument      | Description                                             |
 | ------------- | ------------------------------------------------------- |
 | `--video`     | Path to the input video file. Use `0` for webcam.       |
-| `--crosswalk` | Path to the output file to save the video.  |
+| `--output` | Path to the output file to save the video.  |
 
 2. Select the Crosswalk Region:
    - The application will display the first frame of the video and prompt you to select the crosswalk region.
@@ -47,7 +47,7 @@ python main.py --video path/to/video_file.mp4 --crosswalk path/to/output_file.mp
    - Press the 'q' key to stop the application and exit.
 
 5. Output:
-   - If the `--crosswalk` argument is provided, the crosswalk coordinates will be saved to the specified output file as a mp4 file.
+   - If the `--output` argument is provided, the crosswalk coordinates will be saved to the specified output file as a mp4 file.
 
 ## Additional Information
 
