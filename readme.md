@@ -7,6 +7,7 @@ The Pedestrian Detector is a Python-based application that utilizes the YOLO NAS
 - Python 3.x
 - PyTorch
 - OpenCV
+- Supergradients
 
 ## Installation
 
@@ -46,7 +47,7 @@ python main.py --video path/to/video_file.mp4 --crosswalk path/to/output_file.tx
    - Press the 'q' key to stop the application and exit.
 
 5. Output:
-   - If the `--crosswalk` argument is provided, the crosswalk coordinates will be saved to the specified output file as a text file.
+   - If the `--crosswalk` argument is provided, the crosswalk coordinates will be saved to the specified output file as a mp4 file.
 
 ## Additional Information
 
